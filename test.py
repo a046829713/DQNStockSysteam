@@ -1,0 +1,1 @@
+print("certificates_CHOICES".upper())
