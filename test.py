@@ -1,1 +1,1 @@
-print("certificates_CHOICES".upper())
+print("education_level".upper())

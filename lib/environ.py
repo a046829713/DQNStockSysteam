@@ -207,9 +207,13 @@ class StocksEnv(gym.Env):
         # make selection of the instrument and it's offset. Then reset the state
         
         # self._prices.keys() = dict_keys(['YNDX'])
+        
+        # 我認為要訓練多個目標要檢查這裡
         self._instrument = self.np_random.choice(list(self._prices.keys()))
         
         prices = self._prices[self._instrument]
+        
+        
         
         #Prices(open=array([97.6, 100.5, 100.5, ..., 567.0, 574.0, 574.0], dtype=object), high=array([0.02356557377049192, 0.014925373134328358, 0.009950248756218905,
         # dtype=object))

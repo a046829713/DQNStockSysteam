@@ -35,7 +35,7 @@ EVAL_EVERY_STEP = 1000
 
 EPSILON_START = 1.0
 EPSILON_STOP = 0.1
-EPSILON_STEPS = 1000000
+EPSILON_STEPS = 2000000
 
 CHECKPOINT_EVERY_STEP = 1000000
 VALIDATION_EVERY_STEP = 100000
@@ -57,7 +57,7 @@ if __name__ == "__main__":
     
     
     
-    stock_data = {"YNDX": DataProvider().load_relative()}
+    stock_data = DataProvider().get_net_work_data()
             
     
     env = environ.StocksEnv(stock_data, bars_count=BARS_COUNT, reset_on_close=True, state_1d=False, volumes=False)

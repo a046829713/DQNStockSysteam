@@ -1,5 +1,8 @@
-Q: 我發現在訓練(train_model.py) 的時候,environ的State會進入兩次
+Q : 我發現在訓練(train_model.py) 的時候,environ的State會進入兩次
 
 A: 因為其中是有兩個環境會用到,    
     env = environ.StocksEnv(stock_data, bars_count=BARS_COUNT, reset_on_close=True, state_1d=False, volumes=False)
     env_tst = environ.StocksEnv(stock_data, bars_count=BARS_COUNT, reset_on_close=True, state_1d=False)
+
+
+Q : 我要如何訓練更多的標的物?
